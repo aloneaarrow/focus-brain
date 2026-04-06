@@ -86,7 +86,7 @@
 <body>
     <div class="container">
         <h1>🧠 Privacy Policy for FocusBrain</h1>
-        <p class="updated"><strong>Last Updated:</strong> February 2024</p>
+        <p class="updated"><strong>Last Updated:</strong> April 2026</p>
 
         <h2>Introduction</h2>
         <p>FocusBrain ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application FocusBrain (the "App").</p>
@@ -96,10 +96,9 @@
 
         <h3>Information You Provide</h3>
         <ol>
-            <li><strong>Account Information</strong>
+            <li><strong>Display Name</strong>
                 <ul>
-                    <li>Email address (if you create an account)</li>
-                    <li>Display name (optional)</li>
+                    <li>Optional display name (stored locally on your device)</li>
                 </ul>
             </li>
             <li><strong>Task Data</strong>
@@ -125,7 +124,7 @@
                 <ul>
                     <li>Device type and model</li>
                     <li>Operating system version</li>
-                    <li>Unique device identifiers</li>
+                    <li>Anonymous device identifier (generated randomly, not linked to any personal account)</li>
                     <li>App version</li>
                 </ul>
             </li>
@@ -150,7 +149,7 @@
             <li><strong>Provide and Maintain the App</strong> - Enable core functionality, sync your data across devices, process your tasks and track progress</li>
             <li><strong>Improve the App</strong> - Analyze usage patterns, fix bugs and improve performance, develop new features</li>
             <li><strong>Personalize Your Experience</strong> - Match tasks to your energy levels, provide relevant recommendations, customize notifications</li>
-            <li><strong>AI Features</strong> - When you use AI task breakdown, your task title is sent to OpenAI to generate subtasks. We do not store the AI-generated content on our servers.</li>
+            <li><strong>AI Features</strong> - When you use AI features (task breakdown, daily planner, smart suggestions, weekly report), your task titles and energy levels are sent to OpenAI through our secure servers. We do not store the AI-generated content on our servers.</li>
             <li><strong>Subscription Management</strong> - Process and manage your subscription through RevenueCat, verify your premium status</li>
         </ol>
 
@@ -163,8 +162,9 @@
 
         <h3>Cloud Storage</h3>
         <ul>
-            <li>If you create an account, some data may be synced to Firebase</li>
-            <li>This enables cross-device synchronization</li>
+            <li>An anonymous device identifier is stored in Firebase Firestore for rate limiting, notifications, and premium status verification</li>
+            <li>Premium users can back up and restore their data via Firebase Cloud Firestore</li>
+            <li>No email address or personal account is required</li>
         </ul>
 
         <h3>Security Measures</h3>
@@ -178,21 +178,25 @@
         <p>We use the following third-party services:</p>
 
         <h3>Firebase (Google)</h3>
-        <p>Authentication, Analytics, Crashlytics (crash reporting), Cloud Functions</p>
+        <p>Cloud Firestore (data storage), Analytics, Crashlytics (crash reporting), Cloud Functions, Cloud Messaging (push notifications), App Check (security)</p>
         <p><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></p>
+
+        <h3>Google AdMob</h3>
+        <p>Advertising services. AdMob may collect device identifiers, usage data, and approximate location to serve personalized or non-personalized ads based on your consent preferences.</p>
+        <p><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
 
         <h3>RevenueCat</h3>
         <p>Subscription management, Purchase verification</p>
         <p><a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></p>
 
         <h3>OpenAI</h3>
-        <p>AI task breakdown feature. Only task titles are shared, no personal information.</p>
+        <p>AI-powered features (task breakdown, daily planner, smart suggestions, weekly report). Only task titles and energy levels are shared through our secure Firebase Functions; no personal information is sent.</p>
         <p><a href="https://openai.com/privacy" target="_blank">OpenAI Privacy Policy</a></p>
 
         <h2>Data Retention</h2>
         <ul>
             <li><strong>Local data:</strong> Retained until you delete the app or clear app data</li>
-            <li><strong>Account data:</strong> Retained until you delete your account</li>
+            <li><strong>Cloud data:</strong> Anonymous device identifier and usage data are retained until you uninstall the app or request deletion</li>
             <li><strong>Analytics data:</strong> Retained for up to 14 months</li>
         </ul>
 
@@ -200,8 +204,8 @@
         <p>You have the right to:</p>
         <ol>
             <li><strong>Access Your Data</strong> - View all data stored in the app, request a copy of your data</li>
-            <li><strong>Delete Your Data</strong> - Delete individual tasks, delete your account and all associated data, clear all local data</li>
-            <li><strong>Opt-Out</strong> - Disable analytics collection, turn off notifications, use the app without an account</li>
+            <li><strong>Delete Your Data</strong> - Delete individual tasks, clear all local data by uninstalling the app, request deletion of cloud data by contacting us</li>
+            <li><strong>Opt-Out</strong> - Disable analytics collection, turn off notifications, manage ad personalization through device settings</li>
         </ol>
 
         <h2>Children's Privacy</h2>
@@ -216,8 +220,8 @@
         <h2>Contact Us</h2>
         <div class="contact-box">
             <p>If you have questions about this Privacy Policy, please contact us at:</p>
-            <p><strong>Email:</strong> <a href="aloneaarrow@gmail.com">aloneaarrow@gmail.com</a></p>
-            <p><strong>Support:</strong> <a href="aloneaarrow@gmail.com">aloneaarrow@gmail.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:aloneaarrow@gmail.com">aloneaarrow@gmail.com</a></p>
+            <p><strong>Support:</strong> <a href="mailto:aloneaarrow@gmail.com">aloneaarrow@gmail.com</a></p>
         </div>
 
         <hr>
@@ -242,11 +246,11 @@
             <li>Right to data portability</li>
             <li>Right to object</li>
         </ul>
-        <p>To exercise these rights, please contact us at <a href="mailto:privacy@focusbrain.app">privacy@focusbrain.app</a>.</p>
+        <p>To exercise these rights, please contact us at <a href="mailto:aloneaarrow@gmail.com">aloneaarrow@gmail.com</a>.</p>
 
         <hr>
 
-        <p class="footer">© 2024 FocusBrain. All rights reserved.</p>
+        <p class="footer">© 2026 FocusBrain. All rights reserved.</p>
     </div>
 </body>
 </html>
